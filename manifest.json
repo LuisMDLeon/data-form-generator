@@ -1,0 +1,22 @@
+{
+    "name": "Random Data",
+    "description": "Genera emails y números telefónicos aleatorios.",
+    "version": "0.0.0.1",
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+    ],
+    "manifest_version": 2,
+    "permissions": ["storage", "contextMenus", "activeTab"],
+    "icons": {
+        "16": "/images/random-icon.png",
+        "32": "/images/random-icon.png",
+        "48": "/images/random-icon.png",
+        "128": "/images/random-icon.png"
+    }
+}
