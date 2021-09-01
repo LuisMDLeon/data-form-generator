@@ -20,7 +20,7 @@ function generateEmail(info, tab) {
     if (emailConfig.useRandomNUmber) s = Number.parseInt(Math.random() * 1000000000);
     else {
         const d = new Date;
-        const day = pad(d.getDay()), hour = pad(d.getHours()), minutes = pad(d.getMinutes());
+        const day = pad(d.getDate()), hour = pad(d.getHours()), minutes = pad(d.getMinutes());
         s = `${day}${months[d.getMonth()]}${hour}${minutes}${d.getSeconds()}`
     }
 

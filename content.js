@@ -4,7 +4,7 @@ function updateLastInput($element){
     const tagName = $element.tagName;
     const type = $element.type;
 
-    if (tagName=== 'INPUT' && (type === 'phone' || type === 'email')) 
+    if (tagName=== 'INPUT' && (type === 'tel' || type === 'email' || type === 'text')) 
         lastElementClicked = $element;
     else lastElementClicked = null;
 
